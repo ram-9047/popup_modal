@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?/family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    border-radius: 1.2rem;
+    font-family: inherit;
+}
+
+button:hover{
+    background-color: azure;
+    color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+    border-radius: 1.2rem;
+}
+
+.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    display: flex;
+}
+
+.popup{
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: rebeccapurple;
+    font-size: 1.2rem;
+    border: 2px solid transparent;
+}
+
+.popup button:hover{
+    background-color: azure;
+    color: rebeccapurple;
+    border: 2px solid rebeccapurple;
+    border-radius: 1.2rem;
+}
